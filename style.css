@@ -1,0 +1,193 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {                                  
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    position:sticky;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px; 
+}
+
+.ri-arrow-up-circle-fill {
+    height: 20px;
+    width: 20px;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgb(14, 215, 185);
+    border-radius: 50%;
+}
+#H-Name {
+    text-decoration: none;
+    font-size: 3.5vw;
+    color: #fff;
+    line-height: 2.8vw;
+    text-decoration: none;
+    font-weight: 700;
+}
+#H-Name:hover{
+   color: gray;
+}
+
+span {
+    color: rgb(14, 215, 185);
+    padding-left: 7px;
+    text-shadow: 0 0 1px rgb(23, 52, 115);
+    text-shadow:0 0 18px cyan;
+}
+
+#Hbutton {
+    background-color: #3ED1F2;
+    padding: 12px;
+    border: 1px solid rgb(169, 163, 163);
+    border-radius: 25px;
+    font-size: 14px;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 700;
+    box-shadow: 0 0 5px cyan;
+}
+#Hbutton:hover{
+    color: gray;
+
+}
+#intro{
+    width: 90vh;
+    margin: 65px 355px;
+    text-align: center;
+}
+#intro h1{
+    font-size: 2.3rem;
+    color: white;
+    margin-top: 80px;
+}
+
+#img1{
+    height: 370px;
+    width: 1000px;
+    object-fit: cover;
+    position: sticky;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+img{
+    object-position: center;
+    height: 370px;
+    width: 1000px;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px cyan;
+    position: relative;
+    
+}
+#page-3{
+    height: 100%;
+    width: 100%;
+    background-color:#a90606;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        background-color: #111111;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 12vh;
+        padding: 10px 15px;
+    }
+    #H-Name {
+        font-size: 5.5vw;
+        line-height: 5vw;
+        font-weight: 700;
+    }
+    .ri-arrow-up-circle-fill {
+        height: 20px;
+        width: 20px;
+        font-size: 40px;
+        
+    }
+    #Hbutton {
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #intro{ 
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+
+    }
+    #intro h1{
+        font-size: 3.5rem;
+        margin-top: 130px;
+    }
+   
+    #img1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    img{
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px cyan;
+    }
+
+    #page-2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #111111;
+    }
+}
