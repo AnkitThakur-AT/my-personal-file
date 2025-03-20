@@ -12,8 +12,6 @@ body {
 }
 
 #main {
-    /* height: 100%;
-    width: 100%; */
     background-color: #010101;
     position: sticky;
     scroll-behavior: smooth;
@@ -124,7 +122,6 @@ img {
     border-radius: 12px;
     box-shadow: 0 0 10px cyan;
     position: relative;
-
 }
 
 #moving-text {
@@ -145,14 +142,12 @@ img {
 }
 
 .con {
-    /* background-color: #fff; */
     white-space: nowrap;
     display: inline-block;
     animation: move;
     animation-timing-function: linear;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-
 }
 
 #introduction {
@@ -172,7 +167,6 @@ img {
     margin: 7vh 65vh;
     height: 16vh;
     width: 47vh;
-    /* background-color: rebeccapurple; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -201,18 +195,11 @@ img {
     border-radius: 40px;
     color: white;
     font-weight: 600;
-
 }
 
 .D-button2:hover {
     text-shadow: 0 0 3px #58C2F9;
     cursor: pointer;
-}
-
-#page-2 {
-    height: 100%;
-    width: 100%;
-    background-color: red;
 }
 
 @keyframes move {
@@ -226,14 +213,97 @@ img {
 
 }
 
-#page-3 {
+#page-2 {
     height: 100%;
-    width: 100%;
-    background-color: #a90606;
-    margin: 0;
+    /* width: 100%;  */
+    background-color: #222222;
+    color: white;
+}
+
+#page-2 span {
+    color: #38CDFA;
+    font-size: 4rem;
+}
+
+#page-2 h1 {
+    padding-top: 2rem;
+    padding: 0rem 2rem;
+    font-size: 4rem;
+    padding-top: 8rem;
+}
+
+#page-2 h3 {
+    padding: 0rem 2.3rem;
+    font-size: 1.8rem;
+}
+
+#p2dev {
+    padding: 8px;
+    height: 3rem;
+    width: 11rem;
+    margin-top: 3rem;
+    margin-left: 2.3rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p2dev h3 {
     padding: 0;
+}
+
+#skil-logo {
+    height: 6rem;
+    width: 70rem;
+    margin-top: 1.3rem;
+    margin-left: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
+
+.skill-img {
+    /* background-color: yellow; */
+    height: 4.6rem;
+    width: 5rem;
+    margin: 7px;
+    /* border: 2px solid white; */
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-img:hover{
+    box-shadow: 0 0 12px whitesmoke;
+    cursor: pointer;
+}
+
+#skil-logo1 {
+    height: 6rem;
+    width: 40rem;
+    margin-top: 1.3rem;
+    margin-left: -0.7rem;
+    /* background-color: olive; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+
+}
+
+#div-img {
+    height: 3.6rem;
+    width: 4rem;
+    object-fit: cover;
+    box-shadow: none;
+}
+
 
 
 
@@ -245,9 +315,7 @@ img {
 
 @media (max-width:600px) {
     #main {
-        /* height: 100%;
-        width: 100%; */
-        background-color: #000000;
+        background-color: #010101;
     }
 
     header {
@@ -293,18 +361,12 @@ img {
     }
 
     #intro {
-        /* padding: 0 20px;
-        width: 100%;
-        text-align: center;
-        margin: 10px auto; */
-
         padding: 0 10px;
         width: 100%;
         text-align: center;
         margin: 10px auto;
         max-width: 90%;
         word-wrap: break-word;
-
     }
 
     #intro h1 {
@@ -329,49 +391,113 @@ img {
         box-shadow: 0 0 10px cyan;
     }
 
-    #page-2 {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color: #111111;
-    }
-
     #introduction {
-
         font-size: 2vh;
         text-align: center;
         padding: 4.5vh;
         height: 65vh;
-
     }
+
     #say-hi {
         margin: 5vh 9vh;
         height: 8vh;
         width: 29vh;
-        /* background-color: rebeccapurple; */
     }
-    
+
     .D-button {
         padding: 1.5vh;
         font-size: 14px;
         border: 1px solid black;
         border-radius: 40px;
     }
+
     .D-button:hover {
         text-shadow: 0 0 5px #FA5A5A;
         cursor: pointer;
     }
-    
+
     .D-button2 {
         padding: 1.5vh;
         font-size: 14px;
         border: 1px solid black;
         border-radius: 40px;
     }
+
     .D-button2:hover {
         text-shadow: 0 0 3px #58C2F9;
         cursor: pointer;
     }
-    
-}
 
+    #page-2 {
+        height: 100%;
+        /* width: 100%;  */
+        background-color: #222222;
+        color: white;
+    }
+
+    #page-2 h1 {
+        padding: 0rem 2rem;
+        font-size: 4.4vmax;
+        padding-top: 2rem;
+    }
+
+    #page-2 h3 {
+        padding: 0rem 2.3rem;
+        font-size: 2.2vmax;
+    }
+
+    #page-2 span {
+        color: #38CDFA;
+        font-size: 4.4vmax;
+    }
+
+    #p2dev {
+        /* padding: 0rem 2.3rem; */
+        width: 8rem;
+    }
+
+    #p2dev h3 {
+        padding: 0;
+    }
+
+    #skil-logo {
+        height: 14rem;
+        width: 19rem;
+        margin-top: 1.3rem;
+        margin-left: 2.3rem;
+        /* background-color: olive; */
+        /* background-color: #fff; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .skill-img {
+        /* background-color: yellow; */
+        background-color: #fff;
+
+        height: 3.8rem;
+        width: 3.6rem;
+        margin: 7px;
+    }
+
+    #skil-logo1 {
+        height: 10rem;
+        width: 19rem;
+        margin-top: 1.3rem;
+        margin-left: 2.3rem;
+        /* background-color: olive; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    #div-img{
+        height: 3.8rem;
+        width: 3.6rem;
+        object-fit: cover;
+    }
+}
