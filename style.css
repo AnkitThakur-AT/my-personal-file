@@ -226,10 +226,9 @@ img {
 }
 
 #page-2 h1 {
-    padding-top: 2rem;
     padding: 0rem 2rem;
     font-size: 4rem;
-    padding-top: 8rem;
+    padding-top: 7rem;
 }
 
 #page-2 h3 {
@@ -279,7 +278,8 @@ img {
     align-items: center;
     justify-content: center;
 }
-.skill-img:hover{
+
+.skill-img:hover {
     box-shadow: 0 0 12px whitesmoke;
     cursor: pointer;
 }
@@ -302,6 +302,101 @@ img {
     width: 4rem;
     object-fit: cover;
     box-shadow: none;
+}
+
+#page-3 {
+    height: 100%;
+    background-color: #222222;
+    color: white;
+}
+
+#page-3 h1 {
+    padding: 0rem 2rem;
+    font-size: 4rem;
+    padding-top: 6rem;
+}
+
+#page-3 h3 {
+    font-size: 1.8rem;
+    padding-left: 2.2rem;
+}
+
+#page-3 span {
+    color: #FC626A;
+    text-shadow: 0 0 50px #FC626A;
+}
+
+#p3dev {
+    margin: 2rem;
+    height: 23rem;
+    width: 75rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray(0, 0, 0);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: none;
+}
+
+#viodev {
+    box-shadow: 0 0 10px black;
+    border-radius: 12px;
+    height: 10rem;
+    width: 17rem;
+    margin: 10px;
+}
+
+#page3img {
+    height: 10rem;
+    width: 17rem;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+#p3dev button {
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+#viodev:hover {
+    box-shadow: 0 0 50px white;
+
+}
+
+#git-link {
+    height: 3.5rem;
+    width: 14rem;
+    /* background-color: cyan; */
+    margin-left: 63rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#git-link button{
+    padding: 3px;
+    background-color: cyan;
+    color: white;
+    size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.ri-corner-down-right-line{
+    height: 15px;
+    width: 15px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.ri-corner-down-right-line:hover{
+    box-shadow: 0 0 50px gray;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+#git-link h2 {
+    font-size: 1.6rem;
 }
 
 
@@ -495,9 +590,72 @@ img {
         flex-wrap: wrap;
 
     }
-    #div-img{
+
+    #div-img {
         height: 3.8rem;
         width: 3.6rem;
         object-fit: cover;
     }
+
+    #page-3 {
+        width: 100%;
+        height: 100%;
+        background-color: #515151;
+        color: white;
+    }
+
+    #page-3 h1 {
+        padding: 0rem 2rem;
+        font-size: 4.4vmax;
+        padding-top: 7rem;
+    }
+
+    #page-3 h3 {
+        padding: 0rem 2.3rem;
+        font-size: 2.2vmax;
+    }
+
+    #page-2 span {
+        font-size: 4.4vmax;
+    }
+
+    #p3dev {
+        margin: 2rem;
+        height: 31rem;
+        width: 22rem;
+    }
+
+    #viodev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        width: 152px;
+    }
+
+    #page3img {
+        height: 5rem;
+        width: 149px;
+        object-fit: cover;
+    }
+
+    #git-link {
+        height: 5.5rem;
+        width: 15rem;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+    }
+    .ri-corner-down-right-line {
+        font-size: 49px;
+    }
+    #git-link h2 {
+        font-size: 1.6rem;
+    }
+    
+
+
 }
