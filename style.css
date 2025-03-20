@@ -11,15 +11,16 @@ body {
     width: 100%;
 }
 
-#main {                                  
-    height: 100%;
-    width: 100%;
-    background-color: #111111;
-    position:sticky;
+#main {
+    /* height: 100%;
+    width: 100%; */
+    background-color: #010101;
+    position: sticky;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
 }
+
 
 header {
     position: fixed;
@@ -30,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px; 
+    padding: 20px 20px;
 }
 
 .ri-arrow-up-circle-fill {
@@ -42,6 +43,17 @@ header {
     box-shadow: 0 0 5px rgb(14, 215, 185);
     border-radius: 50%;
 }
+
+.ri-arrow-up-circle-fill:hover {
+    font-size: 53px;
+    box-shadow: 0 0 5px rgb(170, 198, 222);
+    color: gray;
+}
+
+#scroll {
+    text-decoration: none;
+}
+
 #H-Name {
     text-decoration: none;
     font-size: 3.5vw;
@@ -50,15 +62,16 @@ header {
     text-decoration: none;
     font-weight: 700;
 }
-#H-Name:hover{
-   color: gray;
+
+#H-Name:hover {
+    color: gray;
 }
 
 span {
     color: rgb(14, 215, 185);
     padding-left: 7px;
     text-shadow: 0 0 1px rgb(23, 52, 115);
-    text-shadow:0 0 18px cyan;
+    text-shadow: 0 0 18px cyan;
 }
 
 #Hbutton {
@@ -73,22 +86,24 @@ span {
     font-weight: 700;
     box-shadow: 0 0 5px cyan;
 }
-#Hbutton:hover{
-    color: gray;
 
+#Hbutton:hover {
+    color: gray;
 }
-#intro{
+
+#intro {
     width: 90vh;
     margin: 65px 355px;
     text-align: center;
 }
-#intro h1{
+
+#intro h1 {
     font-size: 2.3rem;
     color: white;
     margin-top: 80px;
 }
 
-#img1{
+#img1 {
     height: 370px;
     width: 1000px;
     object-fit: cover;
@@ -98,7 +113,8 @@ span {
     display: flex;
     justify-content: center;
 }
-img{
+
+img {
     object-position: center;
     height: 370px;
     width: 1000px;
@@ -108,12 +124,112 @@ img{
     border-radius: 12px;
     box-shadow: 0 0 10px cyan;
     position: relative;
-    
+
 }
-#page-3{
+
+#moving-text {
+    white-space: nowrap;
+    padding: 8vw;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+#moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 0 10px wheat;
+}
+
+.con {
+    /* background-color: #fff; */
+    white-space: nowrap;
+    display: inline-block;
+    animation: move;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+#introduction {
+    height: 140vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 16vh;
+    font-size: 5.7vh;
+}
+
+#introduction h2 a {
+    color: white;
+}
+
+#say-hi {
+    margin: 7vh 65vh;
+    height: 16vh;
+    width: 47vh;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.D-button {
+    padding: 2vh;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: #58C2F9;
+    color: white;
+    font-weight: 600;
+}
+
+.D-button:hover {
+    text-shadow: 0 0 5px #FA5A5A;
+    cursor: pointer;
+}
+
+.D-button2 {
+    background-color: #FA5A5A;
+    padding: 2vh;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.D-button2:hover {
+    text-shadow: 0 0 3px #58C2F9;
+    cursor: pointer;
+}
+
+#page-2 {
     height: 100%;
     width: 100%;
-    background-color:#a90606;
+    background-color: red;
+}
+
+@keyframes move {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+
+}
+
+#page-3 {
+    height: 100%;
+    width: 100%;
+    background-color: #a90606;
     margin: 0;
     padding: 0;
 
@@ -129,10 +245,11 @@ img{
 
 @media (max-width:600px) {
     #main {
-        height: 100%;
-        width: 100%;
-        background-color: #111111;
+        /* height: 100%;
+        width: 100%; */
+        background-color: #000000;
     }
+
     header {
         display: flex;
         align-items: center;
@@ -140,43 +257,71 @@ img{
         height: 12vh;
         padding: 10px 15px;
     }
+
     #H-Name {
         font-size: 5.5vw;
         line-height: 5vw;
         font-weight: 700;
     }
+
     .ri-arrow-up-circle-fill {
         height: 20px;
         width: 20px;
         font-size: 40px;
-        
+        cursor: pointer;
     }
+
+    .ri-arrow-up-circle-fill:hover {
+        font-size: 45px;
+    }
+
+    #scroll {
+        text-decoration: none;
+    }
+
     #Hbutton {
         padding: 10px 15px;
         border-radius: 25px;
         font-size: 10px;
         font-weight: 600;
+        cursor: pointer;
     }
-    #intro{ 
-        padding: 0 20px;
+
+    #Hbutton:hover {
+        color: gray;
+        font-size: 10px;
+    }
+
+    #intro {
+        /* padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto; */
+
+        padding: 0 10px;
         width: 100%;
         text-align: center;
         margin: 10px auto;
+        max-width: 90%;
+        word-wrap: break-word;
 
     }
-    #intro h1{
-        font-size: 3.5rem;
-        margin-top: 130px;
+
+    #intro h1 {
+        font-size: 2.6rem;
+        margin-top: 140px;
+        line-height: 1.3;
     }
-   
-    #img1{
+
+    #img1 {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 20px 0;
     }
-    img{
+
+    img {
         width: 90%;
         max-width: 350px;
         height: auto;
@@ -190,4 +335,43 @@ img{
         width: 100%;
         background-color: #111111;
     }
+
+    #introduction {
+
+        font-size: 2vh;
+        text-align: center;
+        padding: 4.5vh;
+        height: 65vh;
+
+    }
+    #say-hi {
+        margin: 5vh 9vh;
+        height: 8vh;
+        width: 29vh;
+        /* background-color: rebeccapurple; */
+    }
+    
+    .D-button {
+        padding: 1.5vh;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+    .D-button:hover {
+        text-shadow: 0 0 5px #FA5A5A;
+        cursor: pointer;
+    }
+    
+    .D-button2 {
+        padding: 1.5vh;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+    .D-button2:hover {
+        text-shadow: 0 0 3px #58C2F9;
+        cursor: pointer;
+    }
+    
 }
+

@@ -14,3 +14,8 @@ var scrollBtn = document.getElementById("scrollUp");
             event.preventDefault(); // Prevent default link action
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
+
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[#main]'),
+            smooth: true
+        });
