@@ -151,12 +151,22 @@ img {
 }
 
 #introduction {
-    height: 140vh;
+    height: 210vh;
     width: 100%;
     color: white;
     text-align: center;
     padding: 16vh;
     font-size: 5.7vh;
+}
+
+#introduction #web {
+    color: hsl(0, 93%, 74%);
+    text-shadow: 0 0 50px #FC626A;
+}
+
+#introduction #ui {
+    color: hsl(0, 93%, 74%);
+    text-shadow: 0 0 50px #FC626A;
 }
 
 #introduction h2 a {
@@ -306,7 +316,7 @@ img {
 
 #page-3 {
     height: 100%;
-    background-color: #222222;
+    background-color: #727272;
     color: white;
 }
 
@@ -375,7 +385,8 @@ img {
     align-items: center;
     justify-content: space-evenly;
 }
-#git-link button{
+
+#git-link button {
     padding: 3px;
     background-color: cyan;
     color: white;
@@ -383,21 +394,132 @@ img {
     cursor: pointer;
     border-radius: 50%;
 }
-.ri-corner-down-right-line{
+
+.ri-corner-down-right-line {
     height: 15px;
     width: 15px;
     font-size: 30px;
     text-decoration: none;
 }
-.ri-corner-down-right-line:hover{
+
+.ri-corner-down-right-line:hover {
     box-shadow: 0 0 50px gray;
     border-radius: 50%;
     height: 16px;
     width: 16px;
 }
+
 #git-link h2 {
     font-size: 1.6rem;
 }
+
+#page-4 {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+#page-4 h1 {
+    padding: 0rem 2rem;
+    font-size: 4rem;
+    padding-top: 6rem;
+    color: white;
+}
+
+#page-4 span {
+    color: #f2fc62;
+    text-shadow: 0 0 50px #fce062;
+}
+
+#artwork {
+    height: 70vh;
+    width: 167vh;
+    /* background-color: orange; */
+    margin: 4vh;
+}
+
+#work {
+    height: 12.12%;
+    width: 167vh;
+    /* background-color: #fff; */
+}
+
+#artwork button {
+    height: 100%;
+    width: 167vh;
+}
+
+#work {
+    height: 12.12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+
+}
+
+#work h2 {
+    margin: 30px;
+    color: white;
+}
+
+#page-5 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #303030;
+    font-size: 4.5rem;
+    padding-top: 4vh;
+    padding-left: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    color: white;
+}
+
+#page-5 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FC626A;
+    text-shadow: none;
+}
+
+#page-5 a:hover {
+    text-shadow: 0 0 50px #FC626A;
+}
+
+#page-5 #link {
+    color: #51CDE7;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+#page-5 #link:hover {
+    text-shadow: 0 0 50px #51CDE7;
+}
+
+#page-5 #git {
+    color: #F6BA53;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+#page-5 #git:hover {
+    text-shadow: 0 0 50px #F6BA53;
+}
+
+#last {
+    height: 10vh;
+    width: 10vw;
+    background-color: #fff;
+}
+
+
+
+
+
+
 
 
 
@@ -490,13 +612,14 @@ img {
         font-size: 2vh;
         text-align: center;
         padding: 4.5vh;
-        height: 65vh;
+        height: 100vh;
+        width: 100vw;
     }
 
     #say-hi {
         margin: 5vh 9vh;
         height: 8vh;
-        width: 29vh;
+        width: 35vh;
     }
 
     .D-button {
@@ -515,7 +638,7 @@ img {
         padding: 1.5vh;
         font-size: 14px;
         border: 1px solid black;
-        border-radius: 40px;
+        border-radius: 30px;
     }
 
     .D-button2:hover {
@@ -524,16 +647,16 @@ img {
     }
 
     #page-2 {
-        height: 100%;
-        /* width: 100%;  */
-        background-color: #222222;
+        height: 110vh;
+        width: 100vw; 
+        background-color: #5f5e5e;
         color: white;
     }
 
     #page-2 h1 {
         padding: 0rem 2rem;
         font-size: 4.4vmax;
-        padding-top: 7rem;
+        padding-top: 4rem;
     }
 
     #page-2 h3 {
@@ -598,8 +721,8 @@ img {
     }
 
     #page-3 {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 110%;
         background-color: #515151;
         color: white;
     }
@@ -607,7 +730,7 @@ img {
     #page-3 h1 {
         padding: 0rem 2rem;
         font-size: 4.4vmax;
-        padding-top: 7rem;
+        padding-top: 3rem;
     }
 
     #page-3 h3 {
@@ -620,9 +743,12 @@ img {
     }
 
     #p3dev {
+        margin: 0rem;
+        height: 29rem;
+        width: 19rem;
+        margin-top: 2rem;
         margin: 2rem;
-        height: 31rem;
-        width: 22rem;
+
     }
 
     #viodev {
@@ -630,7 +756,7 @@ img {
         align-items: center;
         justify-content: center;
         height: 5rem;
-        width: 152px;
+        width: 128px;
     }
 
     #page3img {
@@ -642,20 +768,46 @@ img {
     #git-link {
         height: 5.5rem;
         width: 15rem;
-        margin-left: 10rem;
-        margin-top: 4rem;
+        margin-left: 4rem;
+        margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 26px;
     }
-    .ri-corner-down-right-line {
-        font-size: 49px;
-    }
-    #git-link h2 {
-        font-size: 1.6rem;
-    }
-    
 
+    .ri-corner-down-right-line {
+        font-size: 30px;
+        margin-top: 2rem;
+
+    }
+
+    #git-link h2 {
+        font-size: 1.2rem;
+    }
+
+    #page-4 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #page-4 h1 {
+        padding: 0rem 2rem;
+        font-size: 4.4vmax;
+        padding-top: 3rem;
+    }
+
+    #artwork {
+        height: 60vh;
+        width: 40vh;
+        background-color: orange;
+        margin: 4vh;
+
+    }
+    #page-5 {
+        height: 100vh;
+        width: 100vw;
+        font-size: 1.8rem;
+    }
 
 }
